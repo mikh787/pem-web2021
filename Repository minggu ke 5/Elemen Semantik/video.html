@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Elemen Semantik</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    </head>
+    <body style="background-color: rgb(96, 177, 177);">
+        <div class="medsos">
+            <div class="container">
+                <nav>
+                    <li><a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="https://www.youtube.com/channel/UCthtyexrWa-NKcLXWiePiRA"><i class="fab fa-youtube"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter-square"></i></a></li>
+                </nav>
+            </div>
+        </div>
+
+        <header style="background-color: white;">
+            <div class="container">
+                <h1><a href="layout.html">Mikhael Andreas N</a></h1>
+                <nav>
+                    <li ><a href="layout.html">Home</a></li>
+                    <li><a href="summary.html">Summary</a></li>
+                    <li><a href="audio.html">Audio</a></li>
+                    <!--dalam video.html ini ada video youtubem video gift dll.-->
+                    <li class="active"><a href="video.html">Video</a></li>
+                </nav>                    
+            </div>
+        </header>
+
+        <h3 class="gif">
+            <p>Ini merupakan video gif dan video subtitles.</p>
+        </h3>
+
+        <video controls>
+            <source src="cat-herd.webm" type="video/webm"/>
+            <source src="cat-herd.mp4" type="video/mp4"/>
+            <track src="cat-herd-id.vtt" kind="subtitles" srclang="id" label="Indonesia"/>
+        </video>
+
+        <h3 class="vid">
+            <p>Video ini diambil dari YoutTube.</p>
+        </h3>
+
+        <iframe width="500" height="310" src="https://www.youtube.com/embed/5R0RAacyGYc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+        <!--time.html nya saya masukan ke dalam footer langsung pak-->
+        <footer>
+            <article class="container">
+                <small>Copyright &copy; 2021 - Mikhael Andreas N. All Right Reserved.</small><br>
+                <small>Website ini dibuat pada <time datetime="2021-10-11">11 Oktober 2021. Dari pukul <time>10.25 AM</time> sampai dengan pukul <time>12.30 PM</time></time>.</small>
+            </article>
+        </footer>
+    </body>
+</html>
