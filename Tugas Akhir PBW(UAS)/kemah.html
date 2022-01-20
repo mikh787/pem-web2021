@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+        <title>Produk Wisata</title>
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="style4.css">
+    <body>
+        <!-- header -->
+        <div class="medsos">
+            <div class="container">
+                <ul>
+                    <li><a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="https://www.youtube.com/channel/UCthtyexrWa-NKcLXWiePiRA"><i class="fab fa-youtube"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter-square"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <header>
+            <div class="container">
+                <h1><a href="index.html">Travel Website</a></h1>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="active"><a href="product.html">Products</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="pembelian.html">Form Pembelian</a></li>
+                </ul>
+            </div>
+        </header>
+        <!-- header -->
+
+        <!--label-->
+        <section class="label">
+            <div class="container">
+                <p>Description Pages</p>
+            </div>
+        </section>
+        <!--label-->
+
+        <!-- img & deskripsi wisata -->
+        <center>
+            <img src="img/kemah.jpg" alt="kemah" width="550px" height="300px">
+        </center>
+
+        <div class="desc">
+            <h3><strong>Deskripsi Perkemahan</strong></h3>
+            <p class="paragraf">
+                Berkemah sangat cocok bagi anda yang ingin merasakan bermalam dalam tenda di alam bebas. Selain itu 
+                dengan berkemah di alam bebas juga dapat menghilangkan rasa stress, penat, dan dapat menghindar dari padat
+                nya perkotaan. Berkemah diminati oleh semua kalangan masyarakat, karena selain kita bermalam didalam tenda, kita dapat
+                juga menikmati pemandangan alam, dan menikmati suasana yang sejuk. Bagi keluarga yang hendak berekreasi dengan 
+                memilih kegiatan berkemah, hendaknya mempersiapkan segala sesuatunya, agar kegiatan berkemah itu berlangsung aman, 
+                tenteram dan penuh kesan.
+            </p><br>
+
+            <p class="paragraf">
+                Untuk tarifnya sendiri berkisar Rp 150.000/2-3 orang. Perkemahan ini terletak  di lapangan luas area Wisata Soreang 
+                di kelilingi oleh pohon pinus yang tinggi, rumput-rumput kecil yang hijau dan dekat dengan sungai Soreang. Di area 
+                ini juga terdapat glamour camping (Glamping). Fasilitas yang tersedia di area glamping ini terbilang cukup lengkap. 
+                Tersedia shower dan toilet duduk, listrik, lampu, dan bonus sarapan.
+            </p>
+
+            <center>
+                <button><a href="product.html">Back To Product Page</a></button>
+            </center>
+        </div>
+        <!-- img & deskripsi wisata -->
+
+        <script>
+            //alert
+            var announcement = alert("Anda berada di laman deskripsi.")
+            //alert
+
+            // warna paragraf
+            var paragraf = document.getElementsByClassName("paragraf");
+            console.log(paragraf);
+            paragraf[0].style.color = "blue"
+            paragraf[1].style.color = "brown"
+            // warna paragraf
+        </script>
+
+        <!-- footer -->
+        <footer>
+            <div class="container">
+                <small>Copyright &copy; 2021 - Travel Website. All Right Reserved.</small>
+            </div>
+        </footer>
+        <!-- footer -->
+    </body>
+</html>

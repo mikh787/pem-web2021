@@ -1,0 +1,316 @@
+* {
+    padding:0;
+    margin:0;
+    font-family: "comic sans ms";
+}
+
+/* home page */
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.medsos {
+    padding:5px 0;
+    background-color: #6495ED;
+}
+
+.medsos ul li{
+    display: inline-block;
+    color: #fff;
+    margin-right: 10px;
+}
+
+.container {
+    width:80%;
+    margin: 0 auto;
+}
+
+.container:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+header h1 {
+    float: left;
+    padding: 15px 0;
+    font-weight: bold;
+}
+
+section h2 {
+    color: white;
+    padding: 50px 0;
+}
+
+header ul {
+    float: right;
+}
+
+header ul li {
+    display: inline-block;
+}
+
+header ul li a {
+    padding: 27px 23px;
+    display: inline-block;
+}
+
+header ul li a:hover {
+    background-color: #6495ED;
+    color: #fff;
+}
+
+.active  {
+    background-color: #6495ED;
+    color: #fff;
+}
+
+section{
+    padding: 25px 0;
+}
+
+.label {
+    background-color: #6495ED;
+    color: #fff;
+    padding: 6px 0;
+    margin-bottom: 5px
+}
+
+body, html {
+    height: 100%;
+}
+ 
+.homePage {
+    background-image: url("img/gambarWisata.jpg");
+    height: 450px;
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.homePage :after{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+   
+}
+
+.homePage h2 {
+    color: white;
+    z-index: 1;
+    margin-top: 50px;
+    padding: 20px 25px;
+    border: 3px solid #fff;
+}
+
+.latar h3{
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.latar{
+    text-indent: 0.5in;
+    padding : 20px;
+    margin: 5px;
+    text-align: justify;
+}
+
+.jam_digital{
+    overflow: hidden;
+    width: 200px;
+    margin: 30px auto;
+    border: 5px solid black;
+    background-color: cornflowerblue;
+}
+
+.kotak{
+    float: left;
+    width: 50px;
+    height: 45px;
+}
+
+.kotak p[id="menit"]{
+    margin-right: 2px;
+}
+
+.jam_digital p{
+    color: black;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 5px;
+    margin-right: 35px;
+    margin-left: 30px;
+}
+
+footer {
+    padding: 12px 0;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+}
+
+@media screen and (max-width: 960px){
+    .container {
+        width: 90%;
+    }
+
+    header h1 {
+        text-align: center;
+        float: none;
+    }
+
+    header ul {
+        text-align: center;
+        float: none;
+    }
+
+    .box .col-4 {
+        width: 100%;
+        float: none;
+        margin-bottom: 20px;
+    }
+
+    .card {
+        width: 350px;
+        margin: 0 10px;
+    }
+}
+/* home page */
+
+/* product page */
+.produk {
+	padding: 0;
+	margin: auto;
+	display: grid;
+	grid-template-columns: repeat(8,1fr);
+	margin: 5px 45px;
+	gap:20px;
+	position: relative;
+    margin-bottom: 25px;
+}
+
+.card {
+	width: 80%;
+	height: auto;
+	grid-column: span 8;
+	margin: 15px 65px;
+	border-radius: 15px;
+	position: relative;
+	box-shadow: 0 10px 10px rgba(0,0,0,.1);
+
+}
+
+.head-card img {
+    padding: 5px 5px;
+	width: 450px;
+	height: 230px;
+	object-fit: cover;
+}
+
+.body-card {
+	padding: 10px 15px;
+}
+
+/* .body-card h1 {
+	margin: 10px;	
+} */
+
+.body-card svg {
+	width: 31px;
+	position: absolute;
+	bottom: 7px;
+	right: 20px;
+}
+
+@media screen and (min-width: 550px) {
+    .card {
+        grid-column: span 4;
+    }
+}
+
+button{
+    font-size: 15px;
+    background: #22a4cf;
+    color: white;
+    border: white 3px solid;
+    border-radius: 5px;
+    padding: 8px 8px;
+    margin-top: 10px;
+    height: 45px;
+}
+    
+button:hover{
+    opacity:0.9;
+}
+
+/* laman deskripsi */
+.desc{
+    padding: 25px;
+}
+
+.desc h3{
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.desc p{
+    text-indent: 0.5in;
+    text-align: justify;
+}
+/* product page */
+
+/* contact */
+section h3 {
+    text-align: center;
+    padding: 20px 0;
+    color: black;
+    margin-bottom: 5px;
+}
+
+.service {
+    background-color: #f9f9f9;
+}
+
+.box {
+    color: black; 
+}
+
+.box:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.box .col-4 {
+    width: 25%;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    float: left;
+}
+/* contact */
+
+/* form */
+form{
+    line-height:2em;
+    margin-bottom: 100px;
+}
+
+label, select,input{
+    margin-left: 5px;
+    width: 140px;
+    display: block;
+    float: left;
+    line-height: 18px
+}
+/* form */

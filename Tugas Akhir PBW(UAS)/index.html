@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+        <link rel="stylesheet" href="style4.css">
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <title>Traveller Website</title>
+    </head>
+    <body>                
+        <!-- medsos -->
+        <div class="medsos">
+            <div class="container">
+                <ul>
+                    <li><a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="https://www.youtube.com/channel/UCthtyexrWa-NKcLXWiePiRA"><i class="fab fa-youtube"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter-square"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- medsos -->
+
+        <!-- header -->
+        <header>
+            <div class="container">
+                <h1><a href="index.html">Travel Website</a></h1>
+                <ul>
+                    <li class="active"><a href="index.html">Home</a></li>
+                    <li><a href="product.html">Products</a></li>
+                    <li><a href="contact.html">Address/Contact</a></li>
+                    <li><a href="pembelian.html">Form Pembelian</a></li>
+                </ul>
+            </div>
+        </header>
+        <!-- header -->
+
+        <!--label-->
+        <section class="label">
+            <div class="container">
+                <p>Home Pages</p>
+            </div>
+        </section>
+        <!--label-->
+
+        <!-- home page -->
+        <div class="homePage">
+           <h2><strong>It's Wonderful Indonesia</strong></h2>
+        </div>
+        <!-- home page -->
+        
+        <!-- tourism background -->
+        <div class="latar">
+            <h3><strong>Latar Belakang Pariwisata</strong></h3>
+            <p class="paragraf">
+                    Pariwisata merupakan sektor yang ikut berperan penting dalam usaha
+                peningkatan pendapatan. Indonesia merupakan negara yang memiliki
+                keindahan alam dan keanekaragaman budaya, sehingga perlu adanya
+                peningkatan sektor pariwisata. Hal ini dikarenakan pariwisata merupakan
+                sektor yang dianggap menguntungkan dan sangat berpotensi untuk
+                dikembangkan sebagai salah satu aset yang di gunakan sebagai sumber yang
+                menghasilkan bagi Bangsa dan Negara. 
+            </p><br>
+
+            <p class="paragraf">
+                    Kementrian Pariwisata juga menargetkan
+                ranking pariwisata Indonesia pada awal 2017 dapat menduduki posisi 30 besar
+                dunia sehingga dapat bersaing dengan negara ASEAN lainnya (SindoNews.com).
+                Industri periwisata saat ini seakan menunjukkan diri menjadi salah satu sektor yang
+                memberikan kontribusi besar bagi devisa Indonesia selain sektor migas. 
+            </p><br>
+
+            <p class="paragraf">
+                    Wisata budaya merupakan jenis wisata yang terlibat dan
+                dirangsang oleh seni pertunjukan, seni visual, dan festival. Ada banyak
+                sekali bukti dalam literatur tentang manfaat festival budaya untuk tujuan
+                wisata. Hal ini menunjukkan bahwa festival berkontribusi pada tujuan regenerasi lokal dan kesejahteraan. 
+                Selain itu, festival budaya dapat menghasilkan kesempatan kerja baru serta mendorong pengembangan semacam 
+                infrastruktur yang ramah pengunjung dan berkelanjutan. 
+            </p><br>
+
+            <p class="paragraf">
+                    Pengembangan Suatu tempat yang dijadikan daerah pariwisata diharapkan
+                menjadi sumber dan potensi kegiatan ekonomi yang dapat diandalkan yang
+                mampu menggalakkan kegiatan ekonomi, termasuk kegiatan sektor lain
+                sehingga lapangan pekerjaan, pendapatan masyarakat, pendapatan daerah dan
+                pendapatan negara, serta penerimaan devisa meningkat melalui upaya
+                pengembangan dan pembangunan berbagai potensi kepariwisataan nasional,
+                dengan tetap memelihara kepribadian bangsa dan kelestarian fungsi serta mutu
+                lingkungan hidup.
+            </p>
+        </div>
+        <!-- tourism background -->
+
+        <!-- date & jam digital -->
+        <h4 align="center" id="tanggal"></h4>
+        <div class="jam_digital">
+            <div class="kotak">
+                <p id="jam"></p>
+            </div>
+            <div class="kotak">
+                <p id="menit"></p>
+            </div>
+            <div class="kotak">
+                <p id="detik"></p>
+            </div>
+        </div>
+        <!-- date & jam digital -->
+
+        <script>
+            // alert
+            alert("Hallo Selamat datang di Web Wisata^^")
+            // alert
+
+            // warna paragraf
+            var paragraf = document.getElementsByClassName("paragraf");
+            console.log(paragraf);
+            paragraf[0].style.color = "blue"
+            paragraf[1].style.color = "green"
+            paragraf[2].style.color = "red"
+            paragraf[3].style.color = "purple"
+            // warna paragraf
+            
+            // jam digital
+            var tgl = new Date();
+            document.getElementById("tanggal").innerHTML = "Waktu akses "+tgl;
+            window.setTimeout("waktu()", 1000);
+            function waktu(){
+                var waktu = new Date();
+                setTimeout("waktu()", 1000);
+                document.getElementById("jam").innerHTML = waktu.getHours();
+                document.getElementById("menit").innerHTML = waktu.getMinutes();
+                document.getElementById("detik").innerHTML = waktu.getSeconds();
+            }
+
+            // mengubah warna css per detik
+            var i = 0;
+            function change(){
+                var classJamDigital = document.getElementsByClassName("jam_digital");
+                var color = ["DodgerBlue","DeepSkyBlue","Aqua","AliceBlue"];
+
+                classJamDigital[0].style.backgroundColor = color[i];
+                i = (i+1)%color.length;
+            }
+            setInterval(change, 1000);
+            // jam digital
+        </script>
+
+        <!-- footer -->
+        <footer>
+            <div class="container">
+                <small>Copyright &copy; 2021 - Travel Website. All Right Reserved.</small>
+            </div>
+        </footer>
+        <!-- footer -->
+    </body>
+</html>
